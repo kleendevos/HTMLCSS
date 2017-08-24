@@ -1,29 +1,157 @@
+
+
 body
 {
 color:#555555;
-font-family: "Trebuchet MS", "Helvetica", "Verdana", san serif;
+font-family: 'Inconsolata', monospace;
 font-size:90%;
 line-height:1.7em;
+width:960px;
+margin-right: auto;
+margin-left: auto;
+background: linear-gradient(100deg, #FFFFFF,#f4f1f1);
+background-repeat: no-repeat;
 }
 
 a{color:inherit;}
-a:hover{color:#999999;}
+a:hover{
+background-color:#f4f1f1;
+color: #FFFFFF
+}
 
 header
 {
 font-family: serif;
+font-size:80%;
+color:#999999;
+line-height:1em;
+font-family: 'Inconsolata', monospace;
+}
+
+header p{
+float:right;
+}
+
+.logo{
+transition-property: transform;
+transition-duration; infinite;
+}
+
+.logo:hover {
+animation-name: rotate;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+p:hover{
+background-color: #FFFFFF
+}
+
+dd:hover{
+background-color: #FFFFFF
+}
+
+
+
+h1{
+display:none;}
+
+nav{
+float:left;
+width:250px;
+font-family: 'Inconsolata', sans-serif;
+}
+
+main{
+float:left;
+width:650px;
+margin-left: 30px;
+}
+
+main p{
+font-family: 'Inconsolata', monospace;
+}
+
+dd{
+font-family: 'Inconsolata', monospace;
+}
+
+dt{
+font-family: 'Poppins', sans-serif;
+}
+
+
+.navigation li {
+               border-bottom: 1px solid #999999;
+               list-style-image: url("/Users/vdabcursist/Desktop/Architecten/images/ornament.gif");
+               }
+
+.navigation a:link{
+                  text-decoration:none;
+                  text-shadow: 1px 2px 5px grey;
+                  }
+
+.navigation li a:hover {
+                       background-color: #f4f1f1;
+                       color:#FFFFFF;
+                       text-decoration: none;
+                       }
+
+.navigation .navigationactive  {
+                                 color:#0000AD;
+                                 text-decoration: none;
+                                 list-style-image: url("/Users/vdabcursist/Desktop/Architecten/images/ornamentcurrent.gif");
+                                 }
+
+figure {
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+border: 2px solid black;
+}
+
+figure img {
+flex-shrink:0;
+min-width: 100%;
+min-height:100%;
+}
+
+tr {
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+background:#FFFFFF
+}
+
+th{
+background-color: transparant;
+}
+
+td img {
+flex-shrink:0;
+min-width: 100%;
+min-height:100%;
 }
 
 h2
 {
 color:#0000AD;
 font-size:1.75em;
+font-family: 'Poppins', sans-serif;
 }
 
 h3
 {
 color:#9C9CDE;
 font-size:1.5em;
+font-family: 'Poppins', sans-serif;
 }
 
 
@@ -38,6 +166,8 @@ footer
 text-align: right;
 font-size:80%;
 color:#999999;
+clear: both
+
 }
 
 #dream
@@ -45,13 +175,20 @@ color:#999999;
 color:#9C9CDE;
 font-style: italic;
 font-size:1.555em;
-font-family:serif;
+font-family:'Inconsolata', monospace;
 font-weight: bold;
 }
 
-legend
+fieldset legend
 {
 color:#9C9CDE;
 font-size:120%;
 }
 
+hr {
+    border: none;
+    height: 10px;
+    background: url("/Users/vdabcursist/Desktop/Architecten/images/footerline.gif") 100% 0 no-repeat;
+}
+
+form ol { list-style: none;}
